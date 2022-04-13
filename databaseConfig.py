@@ -2,9 +2,9 @@ import mysql.connector
 
 
 username = 'admin'
-password = 'Saketh12'
-host = 'redditsentimentscraper.clx83lofg8ls.us-east-2.rds.amazonaws.com'
-database = 'reddit'
+password = 'password'
+host = 'kokadb.clx83lofg8ls.us-east-2.rds.amazonaws.com'
+database = 'db'
 
 mysql_connection = mysql.connector.connect(user=username, password=password, host=host, database=database)
 cursor = mysql_connection.cursor()

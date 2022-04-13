@@ -14,3 +14,6 @@ def getComments():
     for comment in list:
         comment_list.append(comment[0])
     return comment_list
+
+
+addComment("Hello")

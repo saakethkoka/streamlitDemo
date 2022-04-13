@@ -36,7 +36,7 @@ if ask_prices:
 
 text = st.text_area("Add Comment here")
 if st.button("Submit"):
-    st.write(text)
+    addComment(text)
 
 for i in getComments():
     st.write(i)
