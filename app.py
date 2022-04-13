@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+from queries import *
 
 
 if 'count' not in st.session_state:
@@ -32,3 +32,12 @@ if bid_prices:
 if ask_prices:
     new_df = df["Ask"]
     st.line_chart(new_df)
+
+
+text = st.text_area("Add Comment here")
+
+if text:
+    addComment(text)
+
+for i in getComments():
+    st.write(i)
